@@ -1018,8 +1018,10 @@ FileETag None
 # ----------------------------------------------------------------------
 
 # Recommended by Wordfence security plugin for Wordpress
+# NOTE this will cause an `Internal Server 500` error on some hosts, if they use PHP in CGI mode rather than as an Apache module.
+# If that is the case, there is usually a function in cPanel to edit php.ini for specific sites.
 
-php_value auto_prepend_file '/home/pitchkot/public_html/addons/economics-post.com/wordfence-waf.php'
+# php_value auto_prepend_file '/home/pitchkot/public_html/addons/economics-post.com/wordfence-waf.php'
 
 
 # ----------------------------------------------------------------------
