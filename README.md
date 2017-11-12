@@ -10,6 +10,7 @@ Several enhancements and modifications were made to the standard version linked 
 3. Forcing HTTPS
 4. Allow URLs without extensions (i.e. `www.server.com/webpage` is the same as `www.server.com/webpage.html`)
   * Accessing webpages using the file extension will still work; no redirect happens.
+5. Support automatic generation of Let's Encrypt certificates by cPanel
 
 ## Installation
 
